@@ -10,6 +10,8 @@
     "not op_mini all",
     "not < 0.25%"
   ],
+  "main": "main.js",
+  "homepage": "http://Concheliga.github.io/big-trip-4",
   "scripts": {
     "lint": "eslint src/",
     "build": "webpack --mode production",
