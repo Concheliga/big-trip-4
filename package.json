@@ -17,7 +17,8 @@
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --open",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public",
+    "gh-deploy": "git push origin :gh-pages && git subtree push --prefix public origin gh-pages"
   },
   "devDependencies": {
     "@babel/core": "7.20.5",
