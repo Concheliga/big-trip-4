@@ -13,7 +13,9 @@
   "scripts": {
     "lint": "eslint src/",
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development --open"
+    "start": "webpack serve --mode development --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "devDependencies": {
     "@babel/core": "7.20.5",
@@ -22,6 +24,7 @@
     "css-loader": "6.7.2",
     "eslint": "8.28.0",
     "eslint-config-htmlacademy": "8.0.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "5.6.0",
     "style-loader": "3.3.1",
     "webpack": "5.75.0",
@@ -35,7 +38,11 @@
     "copy-webpack-plugin": "11.0.0",
     "dayjs": "1.11.10",
     "flatpickr": "4.6.13",
-    "nanoid": "5.0.7",
-    "he": "1.2.0"
+    "he": "1.2.0",
+    "nanoid": "5.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Concheliga/big-trip-4.git"
   }
 }
